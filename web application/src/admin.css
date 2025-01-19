@@ -1,0 +1,141 @@
+/* Styles pour le formulaire de connexion admin */
+.signin_admin form {
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto; /* Centré verticalement et horizontalement */
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(255,69,0,0.8), rgba(255,140,0,0.8));
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    gap: 20px;
+    width: 40%; /* Largeur ajustée */
+    color: white;
+    font-family: Arial, sans-serif;
+    animation: slideIn 0.5s ease-out; /* Animation d'entrée pour le formulaire */
+}
+
+/* Animation de l'apparition du formulaire */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section contenant les éléments du formulaire */
+.signin_admin form section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Champ de saisie (mot de passe) */
+.signin_admin form input {
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    background-color: rgba(255, 235, 205, 0.9);
+    color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Effet au survol du champ de saisie */
+.signin_admin form input:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 218, 185, 0.9);
+}
+
+/* Effet de focus sur le champ de saisie */
+.signin_admin form input:focus {
+    outline: 2px solid rgba(255, 99, 71, 0.8);
+    background-color: rgba(255, 248, 220, 1);
+}
+
+/* Style pour les boutons */
+.signin_admin form button {
+    margin: 0 auto;
+    width: 50%;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(255, 69, 0, 0.9), rgba(255, 99, 71, 0.9));
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet de survol du bouton */
+.signin_admin form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.5);
+}
+
+/* Effet au clic sur le bouton */
+.signin_admin form button:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+/* Message d'erreur */
+.signin_admin p {
+    color: #d9534f; /* Rouge pour signaler l'erreur */
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease-in-out; /* Animation pour le message d'erreur */
+}
+
+/* Animation d'apparition du message d'erreur */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Titre au-dessus du formulaire */
+.signin_admin h2 {
+    text-align: center;
+    color:  #d9534f;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Met en majuscules */
+    letter-spacing: 1px; /* Espacement des lettres */
+    animation: fadeInTitle 1s ease-out; /* Animation pour l'apparition du titre */
+}
+
+/* Animation pour l'apparition du titre */
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style pour le <p> affichant les informations de l'utilisateur */
+.user-info {
+    font-size: 18px;  /* Taille de police */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #333;  /* Couleur du texte */
+    margin-bottom: 20px;  /* Espacement en bas */
+    padding: 10px;  /* Espacement intérieur */
+    background-color: #f4f4f4;  /* Couleur de fond */
+    border-radius: 5px;  /* Bords arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Ombre légère */
+    display: inline-block;  /* Pour éviter que le <p> prenne toute la largeur */
+  }
+  

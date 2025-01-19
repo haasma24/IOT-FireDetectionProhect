@@ -1,0 +1,60 @@
+/* Spinner de chargement */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6347; /* Couleur orangée */
+  }
+  
+  /* Message d'erreur */
+  .error-message {
+    color: #FF6347;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Notifications */
+  .migrate-data-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .migrate-data-container p {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  /* Message lorsqu'aucune notification n'est trouvée */
+  .migrate-data-container p.no-notifications {
+    color: #ccc;
+    font-style: italic;
+  }
+  /* Styles pour le cercle de chargement */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrer verticalement */
+  }
+  
+  .loading-spinner::after {
+    content: '';
+    border: 6px solid rgba(255, 99, 71, 0.3); /* Couleur claire du cercle */
+    border-top: 6px solid #FF6347; /* Couleur vive pour la partie tournante */
+    border-radius: 50%; /* Forme ronde */
+    width: 50px; /* Taille du cercle */
+    height: 50px; /* Taille du cercle */
+    animation: spin 1s linear infinite; /* Animation de rotation infinie */
+  }
+  
+  /* Animation de rotation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  

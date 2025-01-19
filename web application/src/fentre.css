@@ -1,0 +1,36 @@
+.fenetre {
+    position: absolute; /* Position absolue pour un placement précis */
+    top: 20px; /* Distance depuis le haut de l'écran */
+    left: 50%; /* Centre horizontal */
+    transform: translateX(-50%); /* Ajuste pour que le centre du conteneur soit aligné */
+    display: flex;
+    flex-direction: column; /* Les liens sont empilés verticalement */
+    gap: 20px; /* Espacement entre les liens */
+    font-family: Arial, sans-serif;
+    background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fenetre a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    background: #FF4500;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+.fenetre a:hover {
+    transform: scale(1.1);
+    background-color: #FFA500;
+}
+
+.fenetre a:active {
+    transform: scale(1);
+    background-color: #FF6347;
+}

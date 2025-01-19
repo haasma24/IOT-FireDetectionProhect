@@ -1,0 +1,139 @@
+.Connect_screen {
+    background-image: url("D:/js/Nouveau dossier/IOT v2/IOTPRo/src/assets/agent_sos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Connect_container {
+    width: 40%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.Connect_description {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 22px;
+    margin: 20px 10%;
+    line-height: 1.6;
+}
+
+.about_us, .Connection {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about_us:hover, .Connection:hover {
+    transform: scale(1.1);
+    color: #FFD700;
+}
+
+.Connect_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.Connect_container form input {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.Connect_container form input:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.Connect_container form input:focus {
+    outline: 2px solid rgba(0, 123, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.Connect_container form button {
+    width: 60%;
+    height: 45px;
+    margin: 10px auto;
+    background: linear-gradient(135deg, rgba(255, 69, 0, 0.9), rgba(255, 140, 0, 0.9));
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Connect_container form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 69, 0, 0.5);
+}
+
+.Connect_container form button:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.Connect_container img {
+    width: 300px;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Conteneur des boutons */
+.Sign {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les boutons */
+    margin-top: 30px; /* Espacement au-dessus des boutons */
+  }
+  
+  /* Style des boutons */
+  .Sign button {
+    background-color: rgba(255, 99, 71, 0.8); /* Couleur de fond orangée */
+    color: white; /* Texte blanc */
+    border: none; /* Pas de bordure */
+    padding: 12px 24px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur en main */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation au survol */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Ombre portée douce */
+  }
+  
+  /* Effet au survol du bouton */
+  .Sign button:hover {
+    background-color: rgba(255, 140, 0, 0.8); /* Couleur plus claire au survol */
+    transform: scale(1.05); /* Agrandissement léger du bouton */
+  }
+  
+  /* Effet lors du clic sur le bouton */
+  .Sign button:active {
+    background-color: rgba(255, 69, 0, 1); /* Couleur plus intense au clic */
+    transform: scale(0.95); /* Réduction légère du bouton */
+  }
+  

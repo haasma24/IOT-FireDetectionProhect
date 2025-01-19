@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+
+        <!-- Titre de la page -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="120dp" />
+
+        <!-- Température -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/pbTemperature"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="#8BC34A"
+                app:trackColor="#FFC107"
+                app:trackThickness="8dp" />
+
+            <TextView
+                android:id="@+id/tvTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Température: 0°C"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Humidité -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/pbHumidity"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="#4CAF50"
+                app:trackColor="#FFC107"
+                app:trackThickness="8dp" />
+
+            <TextView
+                android:id="@+id/tvHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidité: 0%"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Flamme -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/pbFlame"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="#FF5722"
+                app:trackColor="#FFC107"
+                app:trackThickness="8dp" />
+
+            <TextView
+                android:id="@+id/tvFlame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flamme: 0%"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Gaz -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/pbGas"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:max="5000"
+                android:progress="0"
+                app:indicatorColor="#FF9800"
+                app:trackColor="#FFC107"
+                app:trackThickness="8dp" />
+
+            <TextView
+                android:id="@+id/tvGas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gaz: 0 ppm"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/callUsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Us"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="#D01626"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
